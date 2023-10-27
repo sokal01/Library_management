@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div style="font-size: 2rem">
+        <a href="/"
+          ><img src="images/Vector.svg" alt="" width="100px" height="70px"
+        /></a>
+      </div>
+      <!-- <div style="font-size: 1.5rem"><a href="#">Issue Books</a></div> -->
+      <div style="font-size: 1.5rem">
+        <ul>
+          <!-- <li><a href="#">Search Books</a></li> -->
+          <!-- <li><a href="#">Issue Book</a></li>
+          <li><a href="/return.html">Return</a></li> -->
+        </ul>
+      </div>
+      <ul style="font-size: 1.2rem">
+        <li class="login"><a href="/login.html">Login</a></li>
+        <!-- <li><a href="#">Sign Up</a></li> -->
+        <li class="user-list" onclick="showProfile()">
+          <a href="#"></a>
+          <div class="profile" style="font-size: 0.8rem"></div>
+        </li>
+        <li class="admin"><a href="/admin.html"></a></li>
+        <li onclick="logout()" class="logout"><a href="#"></a></li>
+      </ul>
+    </header>
+    <main style="min-height: 87vh" class="home-main">
+      <form class="home-form">
+        <div style="margin: auto">
+          <br />
+          <img
+            style="display: block; margin: auto"
+            src="/images//Vector.svg"
+            alt=""
+            width="100px"
+            height="100px"
+          />
+        </div>
+        <br /><br />
+        <div class="search-container">
+          <input
+            class="search-input"
+            type="search"
+            name=""
+            id=""
+            placeholder="Search by id or name"
+          />
+          <button onclick="searchBook()" type="button">Search</button>
+        </div>
+        <select onchange="searchFromCategory(this)" name="" class="category">
+          <!-- <option value="caregories">Caregories</option>
+          <option value="Microwave Communication and Rader">
+            Microwave Communication and Rader
+          </option>
+          <option value="Digital Signal Processing">
+            Digital Signal Processing
+          </option> -->
+        </select>
+        <div style="height: 40vh" class="card_container"></div>
+      </form>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

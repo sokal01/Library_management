@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    /> -->
+  </head>
+
+  <body>
+    <header>
+      <div style="font-size: 2rem">
+        <a href="/"
+          ><img src="images/Vector.svg" alt="" width="100px" height="70px"
+        /></a>
+      </div>
+      <!-- <div style="font-size: 1.5rem"><a href="#">Issue Books</a></div> -->
+      <div style="font-size: 1.5rem">
+        <ul>
+          <!-- <li><a href="#">Search Books</a></li> -->
+          <!-- <li><a href="#">Issue Book</a></li>
+          <li><a href="/return.html">Return</a></li> -->
+        </ul>
+      </div>
+      <ul style="font-size: 1.2rem">
+        <!-- <li class="login"><a href="#">Login</a></li> -->
+        <!-- <li><a href="#">Sign Up</a></li> -->
+        <li class="user-list"><a href="#"></a></li>
+        <li onclick="logout()" class="logout"><a href="#"></a></li>
+      </ul>
+    </header>
+    <div class="container">
+      <div class="form-box">
+        <h1>Return</h1>
+        <form action="">
+          <h3 class="login-error"></h3>
+          <div class="input-group">
+            <div class="input-field">
+              <!-- <i class="fa-solid fa-envelope"></i> -->
+              <input class="return-user" type="number" placeholder="User Id" />
+            </div>
+            <div class="input-field">
+              <!-- <i class="fa-solid fa-lock"></i> -->
+              <input class="return-book" type="number" placeholder="Book Id" />
+            </div>
+            <div style="cursor: pointer" class="btn" onclick="returnBook()">
+              Return
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
